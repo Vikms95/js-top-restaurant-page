@@ -9,9 +9,9 @@ function appendButtonMenu(){
     tabContact.textContent = 'Contact';
 
     tabsDiv.classList.add('tab-menu');
-    tabHome.classList.add('tab-menu-button');
+    tabHome.classList.add('tab-home-button');
     tabMenu.classList.add('tab-menu-button');
-    tabContact.classList.add('tab-menu-button');
+    tabContact.classList.add('tab-contact-button');
 
     tabsDiv.appendChild(tabHome);
     tabsDiv.appendChild(tabMenu);
