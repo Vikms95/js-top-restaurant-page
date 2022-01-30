@@ -1,1 +1,1 @@
-console.log("src and dist linked properly");
+(()=>{"use strict";document.getElementById("content").appendChild(function(){const e=document.createElement("div"),t=new Image;return t.src="../images/header.jpg",e.textContent="That restaurant is the best for pizza eating while nerding out",e.appendChild(t),e}())})();
