@@ -3,6 +3,8 @@
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .tab-menu{
@@ -35,3 +37,11 @@
     background-color: black;
     color: white;
 }
+
+.home-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
