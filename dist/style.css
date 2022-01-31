@@ -1,11 +1,61 @@
-.header{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body{
+    margin:0;
 }
+.header-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: -25px;
+    width: 100%;
+    padding-left: 150px;
+    gap: 20px;
+    font-size: 80px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 20px;
+    text-shadow:5px 5px #64485C;
+    text-decoration: underline #64485C;
+    
+
+    background-color: #83677B;
+    font-family: 'Jim Nightshade';
+    border-bottom: solid 3px #64485C;
+    
+}
+
+
+.gotham-logo{
+    width: 80px;
+    margin-bottom: -30px;
+    /* height: 70px; */
+}
+
+.official-web{
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    
+    margin-top: -35px;
+    text-decoration: underline;
+    text-shadow: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.github-link{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+padding: 0px 150px;
+
+    text-decoration: underline;
+    text-shadow: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
 
 .tab-menu{
     display: flex;
