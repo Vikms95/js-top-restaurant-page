@@ -1,10 +1,10 @@
 function appendHeader(){
     const headerContainer = document.createElement('div');
+    const descriptionContainer = document.createElement('div');
     const headerDiv = document.createElement('div');
     const logoHeaderDiv = document.createElement('div');
     const officialWebDiv = document.createElement('div');
     const descriptionDiv = document.createElement('div');
-    const githubLogo = document.createElement('div');
 
     headerContainer.classList.add('header-container');
 

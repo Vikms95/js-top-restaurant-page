@@ -5,7 +5,7 @@ function createHomeContent(){
     element.textContent = 'That restaurant is the best for pizza eating while nerding out';
     
     const myImage = new Image();
-    myImage.src = '../images/header.jpg';
+    myImage.src = '../images/general_restaurant.jpg';
     element.appendChild(myImage);
     
     return element;
