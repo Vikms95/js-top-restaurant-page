@@ -3,7 +3,8 @@ function appendHeader(){
     const headerDiv = document.createElement('div');
     const logoHeaderDiv = document.createElement('div');
     const officialWebDiv = document.createElement('div');
-    const githubDiv = document.createElement('div');
+    const descriptionDiv = document.createElement('div');
+    const githubLogo = document.createElement('div');
 
     headerContainer.classList.add('header-container');
 
@@ -22,9 +23,9 @@ function appendHeader(){
     officialWebDiv.classList.add('official-web');
     headerDiv.appendChild(officialWebDiv);
 
-    githubDiv.textContent = 'Created by Vikms';
-    githubDiv.classList.add('github-link');
-    headerContainer.appendChild(githubDiv);
+    descriptionDiv.textContent = 'Enjoy the best pizza while nerding out  | ';
+    descriptionDiv.classList.add('description');
+    headerContainer.appendChild(descriptionDiv);
 
     return headerContainer;
 }
