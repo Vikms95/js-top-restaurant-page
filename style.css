@@ -3,13 +3,13 @@ body{
 }
 .header-container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
 
     margin-bottom: -25px;
     width: 100%;
-    padding-left: 50px;
+    padding-left: 15px;
     gap: 20px;
     font-size: 80px;
     font-weight: 600;
@@ -52,6 +52,7 @@ body{
     display: flex;
     align-self: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     font-weight: bolder;
     padding: 0px 25px;
 
@@ -61,64 +62,104 @@ body{
     letter-spacing: 2px;
 }
 
-.github-logo{
-    display: flex;
-    align-self: center;
-    justify-content: flex-end;
-    font-weight: bolder;
-
-    text-decoration: underline #64485C;
-    text-shadow: none;
-    font-size: 1px;
-    letter-spacing: 2px;
+.home-content > img{
+    width: 1000px;
+    border: solid 10px #64485C;
+    border-radius: 10px;
 }
-
-.fa,
-.fa-github::before{
-    display: flex;
-    font: normal;
-    font-size: initial;
-    text-rendering: initial;
-}
-/* 
-.fa{
-    display: flex;
-    font: normal;
-    font-size: initial;
-    text-rendering: initial;
-} */
-
-
-
 
 .tab-menu{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-    margin: 20px;
-    padding: 30px;
-    gap: 10px;
 }
 
-.tab-home-button,
-.tab-menu-button,
-.tab-contact-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+button {
+    font-family: 'Fredoka One', cursive;
+    border: 4px solid #3a3737;
+    color: #000000;
+    position: relative;
+    margin: 2rem 3rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.15rem;
+    background-color: transparent;
     cursor: pointer;
-    padding: 20px;
-    border: solid 1px black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
+button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -.6rem;
+    top: -.5rem;
+    z-index: -1;
+    background-color: #64485C;
+    transition: all 200ms ease-out;
+}
+
+button:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.button--bop:active {
+    transform: translateY(3px);
+}
+
+.button--flick:active {
+    animation: flick 640ms infinite;
+}
+
+.button--twist:active {
+    animation: twist 800ms infinite;
+}
+
+.button--spin:active {
+    animation: spin 800ms infinite;
+}
+
+@keyframes flick {
+    0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    67% {
+    transform: translate(.4rem, -1.8rem) rotate(160deg) scale(.4);
+    }
+    100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes twist {
+    0% {
+    transform: rotate(0deg);
+    }
+    30% {
+    transform: rotate(60deg);
+    }
+    60% {
+    transform: rotate(-20deg);
+    }
+    100% {
+    transform: rotate(0deg);
+    }
+}
+
+@keyframes spin {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+  
 .tab-home-button:hover,
 .tab-menu-button:hover,
 .tab-contact-button:hover{
-    background-color: black;
+    background-color: #64485C;
     color: white;
 }
 
