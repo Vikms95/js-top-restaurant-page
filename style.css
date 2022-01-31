@@ -9,7 +9,7 @@ body{
 
     margin-bottom: -25px;
     width: 100%;
-    padding-left: 150px;
+    padding-left: 50px;
     gap: 20px;
     font-size: 80px;
     font-weight: 600;
@@ -25,6 +25,9 @@ body{
     
 }
 
+/* .header{
+    display: flex;
+} */
 
 .gotham-logo{
     width: 80px;
@@ -36,6 +39,7 @@ body{
     display: flex;
     align-self: flex-start;
     justify-content: flex-end;
+    flex-wrap: wrap;
     
     margin-top: -35px;
     text-decoration: underline;
@@ -44,17 +48,47 @@ body{
     letter-spacing: 2px;
 }
 
-.github-link{
+.description{
     display: flex;
     align-self: center;
     justify-content: flex-end;
-padding: 0px 150px;
+    font-weight: bolder;
+    padding: 0px 25px;
 
-    text-decoration: underline;
+    text-decoration: underline #64485C;
     text-shadow: none;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 2px;
 }
+
+.github-logo{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    font-weight: bolder;
+
+    text-decoration: underline #64485C;
+    text-shadow: none;
+    font-size: 1px;
+    letter-spacing: 2px;
+}
+
+.fa,
+.fa-github::before{
+    display: flex;
+    font: normal;
+    font-size: initial;
+    text-rendering: initial;
+}
+/* 
+.fa{
+    display: flex;
+    font: normal;
+    font-size: initial;
+    text-rendering: initial;
+} */
+
+
 
 
 .tab-menu{
