@@ -99,31 +99,16 @@ html,body{
     color: white;
 }
 
-.home-content > img{
-    width: 600px;
-    background-color: #e5ff00;
-    border: 2.5px dashed #faea0d;
 
-}
-
-
-@keyframes spin { 
-    100% { 
-      transform: rotateZ(360deg);
-    }
-  }
 
 .tab-menu{
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
     width: 10%;
     background-color: transparent;
     margin-right: 150px;
-
 }
 
 button{
@@ -182,10 +167,34 @@ button.tab-contact-button{
     margin-top: 50px;
 }
 
-.first-row{
+.first-row,
+.second-row{
     display: flex;
-    /* flex-flow: row wrap; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+    margin: 0px 30px;
 }
+
+.second-row{
+    margin-bottom: 50px;
+}
+
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    flex:1 0.5 200px;
+}
+
+.img-div > img{
+    width: 100%;
+    background-color: #e5ff00;
+    border: 2.5px dashed #faea0d;
+}
+
 
 .text-div{
     padding: 20px;
@@ -193,4 +202,9 @@ button.tab-contact-button{
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+    overflow-wrap: break-word;
+    max-width: 500px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-style: italic;
 }
