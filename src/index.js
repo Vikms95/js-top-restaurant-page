@@ -11,18 +11,20 @@ const menuReference = document.querySelector('.menu-content');
 const contactReference = document.getElementsByClassName('.contact-content');
 
 bodyReference.appendChild(appendHeader());
-bodyReference.appendChild(appendButtonMenu());
 bodyReference.appendChild(divReference);
+divReference.appendChild(appendButtonMenu());
 
 const buttonHomeReference = document.querySelector('.tab-home-button');
 buttonHomeReference.addEventListener('click', () =>{
     divReference.textContent = '';
+    divReference.appendChild(appendButtonMenu());
     divReference.appendChild(createHomeContent());
 });
 
 const buttonMenuReference = document.querySelector('.tab-menu-button');
 buttonMenuReference.addEventListener('click', () =>{
     divReference.textContent = '';
+    divReference.appendChild(appendButtonMenu());
     divReference.appendChild(createMenuContent());
 })
 
