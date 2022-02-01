@@ -1,5 +1,5 @@
 function createHomeContent(){
-
+    const wrapper  = document.createElement('div');
     const element = document.createElement('div');
     const firstRow = document.createElement('div');
     const imgDiv = document.createElement('div');
@@ -8,6 +8,8 @@ function createHomeContent(){
     const imgDiv2 = document.createElement('div');
     const textDiv2 = document.createElement('div');
 
+    wrapper.id ='wrapper';
+    wrapper.appendChild(element);
     element.classList.add('home-content');
     element.appendChild(firstRow);
     
@@ -35,7 +37,7 @@ function createHomeContent(){
     secondRow.appendChild(imgDiv2);
 
 
-    return element;
+    return wrapper;
 }
 
 export default createHomeContent;
