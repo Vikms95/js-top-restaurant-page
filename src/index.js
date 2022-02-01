@@ -14,6 +14,9 @@ const contactReference = document.querySelector('.contact-content');
 bodyReference.appendChild(appendHeader());
 bodyReference.appendChild(contentReference);
 contentReference.appendChild(appendButtonMenu());
+contentReference.appendChild(createHomeContent());
+
+
 const buttonHomeReference = document.querySelector('.tab-home-button');
 buttonHomeReference.addEventListener('click', () =>{
 try{
