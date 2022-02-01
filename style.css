@@ -94,6 +94,7 @@ html,body{
 
 #content{
     display: flex;
+    justify-content: space-evenly;
     flex-flow: row wrap;
     font-size: 20px;
     color: white;
@@ -208,3 +209,44 @@ button.tab-contact-button{
     font-variant: small-caps;
     font-style: italic;
 }
+
+.menu-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    gap:40px;
+    margin-top:50px;
+}
+
+.menu-div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 600px;
+    flex:1 0.5 200px;
+    gap:20px;
+}
+
+.pizza-div{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+.pizza-div > img{
+    width: 100%;
+    background-color: #e5ff00;
+    border: 2.5px dashed #faea0d;
+}
+
+
+
+/* .item-name{
+
+}
+
+.item-desc{
+
+} */
