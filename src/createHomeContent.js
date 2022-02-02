@@ -20,14 +20,14 @@ function createHomeContent(){
     imgDiv.appendChild(myImage);
     firstRow.appendChild(imgDiv);
     textDiv.classList.add('text-div')
-    textDiv.textContent = "Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area - Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area - Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area";
+    textDiv.textContent = "Located on Passeig Fabra i Puig at Barcelona, this little magic space has all prepared to deligth those with a liking on nerd-culture, be it cinema from the 80's and 90's, TV shows, videogames or other media that has marked our early lifes to so many of us.";
     firstRow.appendChild(textDiv);
 
     element.appendChild(secondRow);
     secondRow.classList.add('second-row')
 
     textDiv2.classList.add('text-div')
-    textDiv2.textContent = "Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area -Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area - Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area";
+    textDiv2.textContent = "Restaurante decorado de forma fantástica, transmite la pasión por el cine (especialmente de ciencia ficción y aventuras ochentero y noventero), las series, el mundo del cómic y últimamente también por la NBA. ";
     secondRow.appendChild(textDiv2);
     const myImage2 = new Image();
     myImage2.src = '../images/general2_restaurant.jpg';
