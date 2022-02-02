@@ -109,7 +109,7 @@ html,body{
 
 .tab-menu{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     background-color: transparent;
