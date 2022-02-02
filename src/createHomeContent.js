@@ -30,7 +30,7 @@ function createHomeContent(){
     textDiv2.textContent = "Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area -Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area - Located at Passatge Fabra i Puig, this cave full of magic will deligth your sights while serving the best pizzas among other things in the area";
     secondRow.appendChild(textDiv2);
     const myImage2 = new Image();
-    myImage2.src = '../images/general_restaurant.jpg';
+    myImage2.src = '../images/general2_restaurant.jpg';
     imgDiv2.classList.add('img-div');
     imgDiv2.appendChild(myImage2);
     

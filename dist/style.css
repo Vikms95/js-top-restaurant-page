@@ -46,7 +46,7 @@ html,body{
     width: 100%;
     max-height: max-content;
     padding-left: 50px;
-    gap: 20px;
+    gap: 10px;
     font-size: 80px;
     font-weight: 600;
     font-style: italic;
@@ -60,6 +60,11 @@ html,body{
     
 }
 
+.logo-header{
+    display: flex;
+    justify-content: center;
+}
+
 .gotham-logo{
     display: flex;
     flex:1 1 auto;
@@ -70,7 +75,7 @@ html,body{
 .official-web{
     display: flex;
     align-self: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
     
     margin-top: -35px;
     text-decoration: underline yellow;
@@ -82,10 +87,10 @@ html,body{
 .description{
     display: flex;
     align-self: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     font-weight: bolder;
-    padding: 0px 25px;
+    padding: 0px 10px;
+    max-width: 380px;
 
     text-decoration: underline #64485C;
     text-shadow: none;

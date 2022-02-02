@@ -17,7 +17,6 @@ function appendHeader(){
     logo.src = '../images/gotham-logo.png';
     logoHeaderDiv.appendChild(logo);
     logoHeaderDiv.classList.add('logo-header');
-    headerContainer.appendChild()
     headerContainer.appendChild(logoHeaderDiv);
 
     officialWebDiv.textContent = '- Official website -';
