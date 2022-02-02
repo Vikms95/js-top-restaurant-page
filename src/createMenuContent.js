@@ -1,6 +1,5 @@
 function createMenuContent(){
     const wrapper  = document.createElement('div');
-    const element = document.createElement('div');
     const menuDiv = document.createElement('div');
     const pizzaDiv = document.createElement('div');
     const item1Name = document.createElement('div')
@@ -13,10 +12,7 @@ function createMenuContent(){
     const item3Desc = document.createElement('div')
 
     wrapper.id ='wrapper';
-    wrapper.appendChild(element);
-    
-    element.classList.add('menu-content')
-    element.appendChild(menuDiv);
+    wrapper.appendChild(menuDiv);
 
     menuDiv.classList.add('menu-div')
     menuDiv.appendChild(pizzaDiv);
@@ -45,8 +41,6 @@ function createMenuContent(){
     pizzaImg2.src = '../images/pizza1.jpg'
     pizzaDiv2.appendChild(pizzaImg2)
 
-
-    
     menuDiv.appendChild(pizzaDiv3)
     pizzaDiv3.classList.add('pizza-div')
     pizzaDiv3.appendChild(item3Name)
@@ -59,10 +53,7 @@ function createMenuContent(){
     let pizzaImg3 = new Image()
     pizzaImg3.src = '../images/pizza1.jpg'
     pizzaDiv3.appendChild(pizzaImg3)
-
-
-
-
+    
     return wrapper;
 }
 

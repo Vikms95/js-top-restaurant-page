@@ -6,10 +6,9 @@ import createContactContent from "./createContactContent";
 
 const bodyReference = document.querySelector('body');
 const contentReference = document.getElementById('content');
-const wrapperReference = document.getElementById('wrapper');
-const homeReference = document.querySelector('.home-content')
-const menuReference = document.querySelector('.menu-content');
-const contactReference = document.querySelector('.contact-content');
+// const homeReference = document.querySelector('.home-content')
+// const menuReference = document.querySelector('.menu-content');
+// const contactReference = document.querySelector('.contact-content');
 
 bodyReference.appendChild(appendHeader());
 bodyReference.appendChild(contentReference);

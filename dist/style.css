@@ -38,7 +38,7 @@ html,body{
 .header-container{
     position: sticky;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: -25px;
@@ -60,9 +60,10 @@ html,body{
 }
 
 .gotham-logo{
+    display: flex;
+    flex-grow: 2;
     width: 80px;
     margin-bottom: -30px;
-    /* height: 70px; */
 }
 
 .official-web{
@@ -94,22 +95,26 @@ html,body{
 
 #content{
     display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-flow: column wrap;
     font-size: 20px;
     color: white;
 }
 
-
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
 
 .tab-menu{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
-    margin-right: 150px;
+    margin-top: 30px;
+    flex: 1 1 auto;
 }
 
 button{
@@ -127,7 +132,7 @@ button{
     transition: 1s;
 }
 
-button.tab-home-button{
+/* button.tab-home-button{
     margin-bottom: 0.5rem;
     margin-top: 3rem;
 }
@@ -146,7 +151,7 @@ button.tab-contact-button{
     padding-left: 35px;
     padding-right: 40px;
 }
- 
+  */
 
 
 .tab-home-button:hover,
@@ -210,43 +215,51 @@ button.tab-contact-button{
     font-style: italic;
 }
 
-.menu-content{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: column wrap;
-    gap:40px;
-    margin-top:50px;
-}
-
 .menu-div{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-    max-width: 600px;
-    flex:1 0.5 200px;
-    gap:20px;
+    align-items: center;
+    flex:1 0.5 auto;
+    gap:50px;
+    margin-left: 50px;
 }
 
 .pizza-div{
     display: flex;
     flex-flow: column wrap;
     gap: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
 }
 
 .pizza-div > img{
+    display: flex;
+    justify-content: center;
     width: 100%;
+    max-width: 500px;
     background-color: #e5ff00;
     border: 2.5px dashed #faea0d;
 }
 
 
+.item-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-/* .item-name{
-
+   letter-spacing: 3px;
+   font-family: 'Jim Nightshade';
+   font-size: larger;
+   color: yellow;
 }
 
 .item-desc{
 
-} */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
