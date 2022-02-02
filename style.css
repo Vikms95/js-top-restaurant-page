@@ -139,7 +139,8 @@ button{
 button:after,
 .corners:before {
   background: #363636;
-  content: '';
+  color: black;
+  content: '|';
   height: 30px;
   position: absolute;
   top: -10px;
@@ -290,4 +291,10 @@ button:before {
     align-items: center;
     max-width: 500px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact,
+.schedule{
+    display: flex;
+    gap: 20px;
 }
