@@ -1,6 +1,6 @@
 function appendHeader(){
     const headerContainer = document.createElement('div');
-    const descriptionContainer = document.createElement('div');
+    const logodescriptionDiv = document.createElement('div');
     const headerDiv = document.createElement('div');
     const logoHeaderDiv = document.createElement('div');
     const officialWebDiv = document.createElement('div');
@@ -8,7 +8,7 @@ function appendHeader(){
 
     headerContainer.classList.add('header-container');
 
-    headerDiv.textContent = 'Gotham Pizza';
+    headerDiv.textContent = 'Gotham Pizzeria';
     headerDiv.classList.add('header');
     headerContainer.appendChild(headerDiv);
 
@@ -17,6 +17,7 @@ function appendHeader(){
     logo.src = '../images/gotham-logo.png';
     logoHeaderDiv.appendChild(logo);
     logoHeaderDiv.classList.add('logo-header');
+    headerContainer.appendChild()
     headerContainer.appendChild(logoHeaderDiv);
 
     officialWebDiv.textContent = '- Official website -';

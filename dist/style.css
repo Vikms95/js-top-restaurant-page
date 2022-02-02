@@ -39,6 +39,7 @@ html,body{
     position: sticky;
     display: flex;
     flex-flow: row wrap;
+    flex:1 2 auto;
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: -25px;
@@ -61,7 +62,7 @@ html,body{
 
 .gotham-logo{
     display: flex;
-    flex-grow: 2;
+    flex:1 1 auto;
     width: 80px;
     margin-bottom: -30px;
 }
@@ -70,7 +71,6 @@ html,body{
     display: flex;
     align-self: flex-start;
     justify-content: flex-end;
-    flex-wrap: wrap;
     
     margin-top: -35px;
     text-decoration: underline yellow;
@@ -132,26 +132,46 @@ button{
     transition: 1s;
 }
 
-/* button.tab-home-button{
-    margin-bottom: 0.5rem;
-    margin-top: 3rem;
+button:after,
+.corners:before {
+  background: #363636;
+  content: '';
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  width: 70px;
+  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
 }
-
-button.tab-menu-button,
-button.tab-contact-button{
-    margin: 0.5rem 2rem;
+button:after {
+    left: -30px;
+    transform: rotate(-45deg);
+    clip-path: polygon(
+    0 10%,
+    10% 0,
+    90% 0,
+    100% 10%,
+    100% 90%,
+    50% 100%,
+    10% 95%,
+    0% 90%,
+    0% 10%
+  )
 }
-
-button.tab-menu-button{
-    padding-left: 45px;
-    padding-right: 48px;
+button:before {
+    right: -50px;
+    transform: rotate(45deg);
+    clip-path: polygon(
+    0 10%,
+    10% 0,
+    90% 0,
+    150% 10%,
+    150% 90%,
+    190% 50%,
+    10% 50%,
+    0% 90%,
+    0% 10%
+    )
 }
-
-button.tab-contact-button{
-    padding-left: 35px;
-    padding-right: 40px;
-}
-  */
 
 
 .tab-home-button:hover,
@@ -191,8 +211,8 @@ button.tab-contact-button{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
-    flex:1 0.5 200px;
+    max-width: 500px;
+    flex:1 1 200px;
 }
 
 .img-div > img{
@@ -205,11 +225,13 @@ button.tab-contact-button{
 .text-div{
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     overflow-wrap: break-word;
     max-width: 500px;
+    gap: 5px;
     letter-spacing: 1px;
     font-variant: small-caps;
     font-style: italic;
@@ -223,6 +245,7 @@ button.tab-contact-button{
     flex:1 0.5 auto;
     gap:50px;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .pizza-div{
@@ -232,6 +255,7 @@ button.tab-contact-button{
     width: 100%;
     max-width: 500px;
     margin-top: 30px;
+    flex:1 1 200px;
 }
 
 .pizza-div > img{
