@@ -16,7 +16,7 @@ function createHomeContent(){
     firstRow.classList.add('first-row')
     const myImage = new Image();
     myImage.src = '../images/general_restaurant.jpg';
-    imgDiv.classList.add('img-div');
+    imgDiv.classList.add('img-home-div');
     imgDiv.appendChild(myImage);
     firstRow.appendChild(imgDiv);
     textDiv.classList.add('text-div')
@@ -31,7 +31,7 @@ function createHomeContent(){
     secondRow.appendChild(textDiv2);
     const myImage2 = new Image();
     myImage2.src = '../images/general2_restaurant.jpg';
-    imgDiv2.classList.add('img-div');
+    imgDiv2.classList.add('img-home-div');
     imgDiv2.appendChild(myImage2);
     
     secondRow.appendChild(imgDiv2);
