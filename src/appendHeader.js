@@ -1,4 +1,4 @@
-import logoHeader from '../src/images/gotham-logo.png'
+import logoheader from '../src/images/gotham-logo.png'
 function appendHeader(){
     const headerContainer = document.createElement('div');
     const logodescriptionDiv = document.createElement('div');
@@ -8,15 +8,15 @@ function appendHeader(){
     const descriptionDiv = document.createElement('div');
 
     headerContainer.classList.add('header-container');
-
+    headerContainer.appendChild(headerDiv);
     headerDiv.textContent = 'Gotham Pizzeria';
     headerDiv.classList.add('header');
-    headerContainer.appendChild(headerDiv);
 
     const logo = new Image();
+    logo.src = logoheader;
     logo.classList.add('gotham-logo');
-    logo.src = logoHeader;
     
+
     logoHeaderDiv.appendChild(logo);
     logoHeaderDiv.classList.add('logo-header');
     headerContainer.appendChild(logoHeaderDiv);
