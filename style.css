@@ -11,7 +11,7 @@ html,body{
     left: -50%;
     right: -50%;
     bottom: -50%;
-    width: 200%;
+    width: 300%;
     height: 200vh;
     background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
     background-repeat: repeat;
@@ -33,7 +33,6 @@ html,body{
     90% { transform: translate(10%,5%) }
     100% { transform: translate(5%,0) }
 }
-
 
 .header-container{
     position: sticky;
@@ -103,12 +102,14 @@ html,body{
     flex-flow: column wrap;
     font-size: 20px;
     color: white;
+    background-color: transparent;
 }
 
 #wrapper{
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    background-color: transparent;
 }
 
 .tab-menu{
@@ -132,7 +133,6 @@ button{
     background-color: transparent;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
-    z-index: 0;
     transition: 1s;
 }
 
@@ -196,6 +196,7 @@ button:before {
     align-items: center;
     gap:40px;
     margin-top: 50px;
+    background-color: transparent;
 }
 
 .first-row,
@@ -206,6 +207,7 @@ button:before {
     flex-wrap: wrap-reverse;
     gap: 70px;
     margin: 0px 30px;
+    background-color: transparent;
 }
 
 .second-row{
@@ -227,9 +229,9 @@ button:before {
     max-width: 600px;
     max-height: 400px;
     background-color: #e5ff00;
-    border: 2.5px dashed #faea0d;
-}
+    border: 3px dotted #808080;
 
+}
 
 .text-div{
     padding: 20px;
@@ -243,6 +245,7 @@ button:before {
     gap: 5px;
     letter-spacing: 1px;
     font-style: italic;
+    background-color: transparent;
 }
 
 .menu-div{
@@ -254,19 +257,23 @@ button:before {
     gap:50px;
     margin-left: 50px;
     margin-right: 50px;
+    background-color: transparent;
 }
 
 .item-div{
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     width: 100%;
     max-width: 700px;
     margin-top: 30px;
     flex:1 1 200px;
+    background-color: transparent;
 }
 
-.img-menu-div{
+.image-menu-div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,6 +281,9 @@ button:before {
     max-height: 300px;
     flex:1 1 200px;
     width: 100%;
+    border-radius: 5%;
+    background-color: transparent;
+    box-shadow:2px 2px 5px 5px rgb(251, 255, 0)
 }
 
 .image-menu-div > img{
@@ -283,9 +293,11 @@ button:before {
     max-width: 600px;
     min-width: 400px;
     max-height: 250px;
+    border-radius: 15px;
     background-color: #e5ff00;
-    border: 2.5px dashed #faea0d;
 }
+
+
 
 .item-name{
     display: flex;
