@@ -1,58 +1,89 @@
 function createMenuContent(){
     const wrapper  = document.createElement('div');
     const menuDiv = document.createElement('div');
-    const pizzaDiv = document.createElement('div');
-    const item1Name = document.createElement('div')
-    const item1Desc = document.createElement('div')
-    const pizzaDiv2 = document.createElement('div');
-    const item2Name = document.createElement('div')
-    const item2Desc = document.createElement('div')
-    const pizzaDiv3 = document.createElement('div');
-    const item3Name = document.createElement('div')
-    const item3Desc = document.createElement('div')
 
     wrapper.id ='wrapper';
     wrapper.appendChild(menuDiv);
+    menuDiv.classList.add('menu-div');
 
-    menuDiv.classList.add('menu-div')
-    menuDiv.appendChild(pizzaDiv);
-    pizzaDiv.classList.add('pizza-div')
-    pizzaDiv.appendChild(item1Name)
-    item1Name.classList.add('item-name')
-    item1Name.textContent = 'SPIDERMAN | 9,95 €'
-    pizzaDiv.appendChild(item1Desc)
-    item1Desc.classList.add('item-desc')
-    item1Desc.textContent = 
-    'Tomate, ketchup, mozzarella, hotdog, cebolla caramelizada, cebolla crujiente, bacon y queso crema'
-    let pizzaImg = new Image()
-    pizzaImg.src = '../images/pizza1.jpg'
-    pizzaDiv.appendChild(pizzaImg)
+    let menu = {
+        pizza1:{
+            name: 'SPIDERMAN  9,95',
+            desc: 'Tomato, ketchup, mozzarella, hotdog, caramelized onion, crispy onion, bacon and cream cheese',
+            imgPath: '../images/pizza1.jpg'
+        },
+        pizza2:{
+            name:'I AM GROOT | 12,95 €',
+            desc: 'Tomato, Fior di Latte mozzarella, candied artichokes, aubergines, courgette, black olives, pepper and onion.',
+            imgPath:'../images/pizza1.jpg'
+        },
+        pizza3:{
+            name:'DAVID BOWIE | 12,95€',
+            desc:'Veal, mustard, onion, Fior di Latte mozzarella, candied red pepper and cream cheese',
+            imgPath:'../images/pizza1.jpg'
+        },
+        burguer1:{
+            name:'HARRY POTTER | 8,95€',
+            desc:'Lettuce, tomato, fried egg, ham shavings, straw potatoes and brava sauce.',
+            imgPath:'',
+        },
+        burguer2:{
+            name:'JOKER | 13,95€',
+            desc:'Smoked Beyond Burger ®, lettuce, tomato, cheddar cheese, fried onion, red cabbage, pulled heura and guacamole.',
+            imgPath:'',
+        },
+        burguer3:{
+            name:'GHOSTBUSTERS | 8,95€',
+            desc:'Lettuce, tomato, cheddar cheese, bacon, guacamole, pico de gallo and tortilla chips',
+            imgPath:'',
+        },
+        dessert1:{
+            name:'BLACK PANTHER | 5,50€',
+            desc:'Chocolate sacher cake.',
+            imgPath:'',
+        },
+        dessert2:{
+            name:'HULK | 5,50€',
+            desc:'Pistachio and chocolate coulant.',
+            imgPath:'',
+        },
+        dessert3:{
+            name:'SCREAM | 5,95€',
+            desc:'Artisan cream cup with ice cream and Oreo®.',
+            imgPath:'',
+        }
+    };
 
-    menuDiv.appendChild(pizzaDiv2)
-    pizzaDiv2.classList.add('pizza-div')
-    pizzaDiv2.appendChild(item2Name)
-    item2Name.classList.add('item-name')
-    item2Name.textContent = 'SPIDERMAN | 9,95 €'
-    pizzaDiv2.appendChild(item2Desc)
-    item2Desc.classList.add('item-desc')
-    item2Desc.textContent = 
-    'Tomate, ketchup, mozzarella, hotdog, cebolla caramelizada, cebolla crujiente, bacon y queso crema'
-    let pizzaImg2 = new Image()
-    pizzaImg2.src = '../images/pizza1.jpg'
-    pizzaDiv2.appendChild(pizzaImg2)
+    (function createItemDiv (menu){
+        
+        // iterate array of objects
+        Object.values(menu).forEach((element) => {
+        
+        // create general div, name div, desc div and image div
+        const itemMenuDiv = document.createElement('div');
+        const itemName = document.createElement('div');
+        const itemDesc = document.createElement('div');
+        const itemImageDiv = document.createElement('div');
+        let itemImage = new Image();
 
-    menuDiv.appendChild(pizzaDiv3)
-    pizzaDiv3.classList.add('pizza-div')
-    pizzaDiv3.appendChild(item3Name)
-    item3Name.classList.add('item-name')
-    item3Name.textContent = 'SPIDERMAN | 9,95 €'
-    pizzaDiv3.appendChild(item3Desc)
-    item3Desc.classList.add('item-desc')
-    item3Desc.textContent = 
-    'Tomate, ketchup, mozzarella, hotdog, cebolla caramelizada, cebolla crujiente, bacon y queso crema'
-    let pizzaImg3 = new Image()
-    pizzaImg3.src = '../images/pizza1.jpg'
-    pizzaDiv3.appendChild(pizzaImg3)
+        // append their properties respectively to those divs
+        menuDiv.appendChild(itemMenuDiv);
+        itemMenuDiv.classList.add('item-div');
+        
+        itemMenuDiv.appendChild(itemName);
+        itemName.classList.add('item-name');
+        itemName.textContent = element.name;
+
+        itemMenuDiv.appendChild(itemDesc);
+        itemDesc.classList.add('item-desc');
+        itemDesc.textContent = element.desc;
+
+        itemMenuDiv.appendChild(itemImageDiv);
+        itemImageDiv.classList.add('image-div');
+        itemImage.src = element.imgPath;
+        itemImageDiv.appendChild(itemImage);
+        })
+    })(menu);
     
     return wrapper;
 }

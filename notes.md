@@ -9,6 +9,9 @@
 <!-- - Contact > 1 row with telephone, mail, social media
             2 row with map and address -->
 
+
+Use objects and iterate over them
+
 Menu > https://www.thefork.es/restaurante/mozzafiato-r510935/menu#booking
 
 https://visme.co/blog/website-color-schemes/
