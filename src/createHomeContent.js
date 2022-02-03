@@ -27,7 +27,7 @@ function createHomeContent(){
     secondRow.classList.add('second-row')
 
     textDiv2.classList.add('text-div')
-    textDiv2.textContent = "Restaurante decorado de forma fantástica, transmite la pasión por el cine (especialmente de ciencia ficción y aventuras ochentero y noventero), las series, el mundo del cómic y últimamente también por la NBA. ";
+    textDiv2.textContent = "Equally accompanied with a chill environment proper from the neighbourhood it is located, our restaurant is adecuate for both people wanting to enjoy our peculiar decoration and also,to spend their time on a more classical restaurant sightseeing.";
     secondRow.appendChild(textDiv2);
     const myImage2 = new Image();
     myImage2.src = '../images/general2_restaurant.jpg';

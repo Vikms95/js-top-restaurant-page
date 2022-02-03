@@ -18,8 +18,8 @@ function createContactContent(){
     firstRow.classList.add('first-row')
     
     const myImage = new Image();
-    myImage.src = '../images/general_restaurant.jpg';
-    image.classList.add('img-div');
+    myImage.src = '../images/contact-us.png';
+    image.classList.add('img-home-div');
     image.appendChild(myImage);
     firstRow.appendChild(image);
     
@@ -34,6 +34,8 @@ function createContactContent(){
     mail.classList.add('fa')
     mail.classList.add('fa-envelope')
     mail.textContent =  '  gothampizzeriamadeup@gmail.com'
+    
+    text.classList.add('contact-text')
     firstRow.appendChild(text);
 
     wrapper.appendChild(secondRow);
@@ -41,6 +43,7 @@ function createContactContent(){
     secondRow.classList.add('second-row')
     text2.classList.add('text-div')
     text2.classList.add('contact')
+    text2.classList.add('contact-text')
     secondRow.appendChild(text2);
 
     text2.appendChild(weekday);
@@ -54,7 +57,7 @@ function createContactContent(){
 
     const myImage2 = new Image();
     myImage2.src = '../images/map.png';
-    image2.classList.add('img-div');
+    image2.classList.add('img-home-div');
     image2.appendChild(myImage2);
     secondRow.appendChild(image2);
 

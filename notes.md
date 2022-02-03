@@ -10,7 +10,11 @@
             2 row with map and address -->
 
 
-Use objects and iterate over them
+<!-- Use objects and iterate over them -->
+
+- Dumb border animation for images
+
+- Clean index, home and contact code (refactor to function?)
 
 Menu > https://www.thefork.es/restaurante/mozzafiato-r510935/menu#booking
 

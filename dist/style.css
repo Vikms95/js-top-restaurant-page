@@ -204,7 +204,7 @@ button:before {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
-    gap: 30px;
+    gap: 70px;
     margin: 0px 30px;
 }
 
@@ -216,16 +216,16 @@ button:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
-    max-height: 300px;
-    flex:1 1 200px;
+    max-width: 700px;
+    max-height: 500px;
+    flex:2 1 500px;
     width: 100%;
 }
 
 .img-home-div > img{
     width: 100%;
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 600px;
+    max-height: 400px;
     background-color: #e5ff00;
     border: 2.5px dashed #faea0d;
 }
@@ -242,7 +242,6 @@ button:before {
     max-width: 500px;
     gap: 5px;
     letter-spacing: 1px;
-    font-variant: small-caps;
     font-style: italic;
 }
 
@@ -311,4 +310,9 @@ button:before {
 .schedule{
     display: flex;
     gap: 20px;
+}
+
+.contact-text{
+    border-top: solid 1px yellow;
+    border-bottom: solid 1px yellow;
 }
