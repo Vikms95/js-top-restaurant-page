@@ -15,7 +15,7 @@ function appendHeader(){
 
     const logo = new Image();
     logo.classList.add('gotham-logo');
-    logo.src = '../src/images/gotham-logo.png';
+    logo.src = logo;
     logoHeaderDiv.appendChild(logo);
     logoHeaderDiv.classList.add('logo-header');
     headerContainer.appendChild(logoHeaderDiv);
