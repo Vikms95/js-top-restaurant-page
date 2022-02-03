@@ -1,3 +1,5 @@
+import generalRestaurant from '../src/images/general_restaurant.jpg'
+import generalRestaurant2 from '../src/images/general2_restaurant.jpg'
 function createHomeContent(){
     const wrapper  = document.createElement('div');
     const element = document.createElement('div');
@@ -15,7 +17,7 @@ function createHomeContent(){
     
     firstRow.classList.add('first-row')
     const myImage = new Image();
-    myImage.src = '../src/images/general_restaurant.jpg';
+    myImage.src = generalRestaurant;
     imgDiv.classList.add('img-home-div');
     imgDiv.appendChild(myImage);
     firstRow.appendChild(imgDiv);
@@ -30,7 +32,7 @@ function createHomeContent(){
     textDiv2.textContent = "Equally accompanied with a chill environment proper from the neighbourhood it is located, our restaurant is adecuate for both people wanting to enjoy our peculiar decoration and also,to spend their time on a more classical restaurant sightseeing.";
     secondRow.appendChild(textDiv2);
     const myImage2 = new Image();
-    myImage2.src = '../src/images/general2_restaurant.jpg';
+    myImage2.src = generalRestaurant2;
     imgDiv2.classList.add('img-home-div');
     imgDiv2.appendChild(myImage2);
     

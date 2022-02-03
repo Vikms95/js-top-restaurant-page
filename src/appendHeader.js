@@ -1,3 +1,4 @@
+import logo from '../src/images/gotham-logo.png'
 function appendHeader(){
     const headerContainer = document.createElement('div');
     const logodescriptionDiv = document.createElement('div');
@@ -14,7 +15,7 @@ function appendHeader(){
 
     const logo = new Image();
     logo.classList.add('gotham-logo');
-    logo.src = '../images/gotham-logo.png';
+    logo.src = '../src/images/gotham-logo.png';
     logoHeaderDiv.appendChild(logo);
     logoHeaderDiv.classList.add('logo-header');
     headerContainer.appendChild(logoHeaderDiv);

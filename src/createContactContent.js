@@ -1,3 +1,6 @@
+import contactus from '../src/images/contact-us.png'
+import map from '../src/images/map.png'
+
 function createContactContent(){
     const wrapper  = document.createElement('div');
     const firstRow = document.createElement('div');
@@ -18,7 +21,7 @@ function createContactContent(){
     firstRow.classList.add('first-row')
     
     const myImage = new Image();
-    myImage.src = '../src/images/contact-us.png';
+    myImage.src = contactus;
     image.classList.add('img-home-div');
     image.appendChild(myImage);
     firstRow.appendChild(image);
@@ -56,7 +59,7 @@ function createContactContent(){
     weekend.textContent = ' Weekend: 12:00 - 23:00'
 
     const myImage2 = new Image();
-    myImage2.src = '../src/images/map.png';
+    myImage2.src = map;
     image2.classList.add('img-home-div');
     image2.appendChild(myImage2);
     secondRow.appendChild(image2);
