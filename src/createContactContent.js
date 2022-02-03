@@ -18,7 +18,7 @@ function createContactContent(){
     firstRow.classList.add('first-row')
     
     const myImage = new Image();
-    myImage.src = '../images/contact-us.png';
+    myImage.src = '../src/images/contact-us.png';
     image.classList.add('img-home-div');
     image.appendChild(myImage);
     firstRow.appendChild(image);
@@ -56,7 +56,7 @@ function createContactContent(){
     weekend.textContent = ' Weekend: 12:00 - 23:00'
 
     const myImage2 = new Image();
-    myImage2.src = '../images/map.png';
+    myImage2.src = '../src/images/map.png';
     image2.classList.add('img-home-div');
     image2.appendChild(myImage2);
     secondRow.appendChild(image2);

@@ -15,7 +15,7 @@ function createHomeContent(){
     
     firstRow.classList.add('first-row')
     const myImage = new Image();
-    myImage.src = '../images/general_restaurant.jpg';
+    myImage.src = '../src/images/general_restaurant.jpg';
     imgDiv.classList.add('img-home-div');
     imgDiv.appendChild(myImage);
     firstRow.appendChild(imgDiv);
@@ -30,7 +30,7 @@ function createHomeContent(){
     textDiv2.textContent = "Equally accompanied with a chill environment proper from the neighbourhood it is located, our restaurant is adecuate for both people wanting to enjoy our peculiar decoration and also,to spend their time on a more classical restaurant sightseeing.";
     secondRow.appendChild(textDiv2);
     const myImage2 = new Image();
-    myImage2.src = '../images/general2_restaurant.jpg';
+    myImage2.src = '../src/images/general2_restaurant.jpg';
     imgDiv2.classList.add('img-home-div');
     imgDiv2.appendChild(myImage2);
     

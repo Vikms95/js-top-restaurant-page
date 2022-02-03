@@ -10,47 +10,47 @@ function createMenuContent(){
         pizza1:{
             name: 'SPIDERMAN | 9,95',
             desc: 'Tomato, ketchup, mozzarella, hotdog, caramelized onion, crispy onion, bacon and cream cheese',
-            imgPath: '../images/spiderman.png'
+            imgPath: '../src/images/spiderman.png'
         },
         pizza2:{
             name:'I AM GROOT | 12,95 €',
             desc: 'Tomato, Fior di Latte mozzarella, candied artichokes, aubergines, courgette, black olives, pepper and onion.',
-            imgPath:'../images/iamgroot.png'
+            imgPath:'../src/images/iamgroot.png'
         },
         pizza3:{
             name:'DAVID BOWIE | 12,95€',
             desc:'Veal, mustard, onion, Fior di Latte mozzarella, candied red pepper and cream cheese',
-            imgPath:'../images/david-bowie.png'
+            imgPath:'../src/images/david-bowie.png'
         },
         burguer1:{
             name:'HARRY POTTER | 8,95€',
             desc:'Lettuce, tomato, fried egg, ham shavings, straw potatoes and brava sauce.',
-            imgPath:'../images/harry-potter.png',
+            imgPath:'../src/images/harry-potter.png',
         },
         burguer2:{
             name:'JOKER | 13,95€',
             desc:'Smoked Beyond Burger ®, lettuce, tomato, cheddar cheese, fried onion, red cabbage, pulled heura and guacamole.',
-            imgPath:'../images/joker.png',
+            imgPath:'../src/images/joker.png',
         },
         burguer3:{
             name:'GHOSTBUSTERS | 8,95€',
             desc:'Lettuce, tomato, cheddar cheese, bacon, guacamole, pico de gallo and tortilla chips',
-            imgPath:'../images/ghostbusters.png',
+            imgPath:'../src/images/ghostbusters.png',
         },
         dessert1:{
             name:'BLACK PANTHER | 5,50€',
             desc:'Chocolate sacher cake.',
-            imgPath:'../images/black-panther.png',
+            imgPath:'../src/images/black-panther.png',
         },
         dessert2:{
             name:'HULK | 5,50€',
             desc:'Pistachio and chocolate coulant.',
-            imgPath:'../images/hulk.png',
+            imgPath:'../src/images/hulk.png',
         },
         dessert3:{
             name:'SCREAM | 5,95€',
             desc:'Artisan cream cup with ice cream and Oreo®.',
-            imgPath:'../images/scream.png',
+            imgPath:'../src/images/scream.png',
         }
     };
 
