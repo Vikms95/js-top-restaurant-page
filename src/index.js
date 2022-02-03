@@ -6,13 +6,17 @@ import createContactContent from "./createContactContent";
 
 const bodyReference = document.querySelector('body');
 const contentReference = document.getElementById('content');
+const background = document.createElement('div')
+background.classList.add('bg')
 
+bodyReference.appendChild(background);
 bodyReference.appendChild(appendHeader());
 bodyReference.appendChild(contentReference);
 contentReference.appendChild(appendButtonMenu());
 contentReference.appendChild(createHomeContent());
 
 
+(function addEventListenersButton(){
 const buttonHomeReference = document.querySelector('.tab-home-button');
 buttonHomeReference.addEventListener('click', () =>{
 try{
@@ -42,5 +46,6 @@ buttonContactReference.addEventListener('click', () =>{
     }
     contentReference.appendChild(createContactContent());
 })
+})();
 
 
