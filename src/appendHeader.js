@@ -1,7 +1,6 @@
 import logoheader from '../src/images/gotham-logo.png'
 function appendHeader(){
     const headerContainer = document.createElement('div');
-    const logodescriptionDiv = document.createElement('div');
     const headerDiv = document.createElement('div');
     const logoHeaderDiv = document.createElement('div');
     const officialWebDiv = document.createElement('div');
