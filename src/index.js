@@ -3,6 +3,7 @@ import appendButtonMenu from "./appendButtonMenu";
 import createHomeContent from "./createHomeContent";
 import createMenuContent from "./createMenuContent";
 import createContactContent from "./createContactContent";
+import appendFooter from "./appendFooter";
 
 const bodyReference = document.querySelector('body');
 const contentReference = document.getElementById('content');
@@ -14,6 +15,7 @@ bodyReference.appendChild(appendHeader());
 bodyReference.appendChild(contentReference);
 contentReference.appendChild(appendButtonMenu());
 contentReference.appendChild(createHomeContent());
+bodyReference.appendChild(appendFooter());
 
 
 (function addEventListenersButton(){
