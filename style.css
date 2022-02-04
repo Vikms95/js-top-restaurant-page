@@ -310,7 +310,7 @@ button:before {
    color: yellow;
 }
 
-.item-desc{
+.item-desc{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,4 +327,24 @@ button:before {
 .contact-text{
     border-top: solid 1px yellow;
     border-bottom: solid 1px yellow;
+}
+
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    gap: 20px;
+
+    background-color: #111111;
+    color: yellow;
+}
+
+.github-link{
+    color: yellow;
+    text-decoration: none;
 }
