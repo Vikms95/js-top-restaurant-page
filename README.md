@@ -1,6 +1,6 @@
 Restaurant Project using webpack and modules.
 
-Live preview at https://vikms95.github.io/top-restaurant-page/
+Live preview at https://vikms95.github.io/js-top-restaurant-page/
 
 What I learnt with this project: 
 - Webpack basic settings and tools to make development easier and more reliable. Basic setup of the project with npx init, dumping of data with npx webpack as well as QOL commands such as npx webpack watch to update the contents on page load automatically, without having to enter npx webpack everytime.
